@@ -491,6 +491,33 @@ main{
     font-size: 0.95rem;
 }
 
+@media (min-width: 769px) and (max-width: 1500px) {
+  .mi-historia {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 320px;
+    align-items: end;
+    gap: 2rem;
+    overflow: hidden;
+    padding-bottom: 0;
+  }
+
+  .mi-historia-contenedor {
+    grid-template-columns: 150px minmax(0, 1fr);
+    gap: 2rem;
+    padding-bottom: 4rem;
+  }
+
+    .mi-historia-imagen {
+        position: absolute;
+        right: 7%;
+        bottom: 0;
+        display: block;
+        width: 100%;
+        height: auto;
+        max-width: 320px;
+    }
+}
+
 @media (max-width: 768px){
     nav.nav-superior{
         width: 100%;
@@ -612,8 +639,20 @@ main{
         grid-template-columns: 1fr;
     }
 
+    .mi-historia{
+        overflow: hidden;
+        padding-bottom: 0;
+    }
+
     .mi-historia-imagen{
-        display: none;
+        position: static;
+        display: block;
+        width: 360px;
+        height: auto;
+        max-width: 100%;
+        margin: 2rem auto 0;
+        object-fit: contain;
+        object-position: center bottom;
     }
 
     .como-trabajo{
