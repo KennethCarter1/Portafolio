@@ -291,7 +291,7 @@ main{
     padding: 4rem 7%;
     background-color: #f9fafb;
     position: relative;
-    overflow: hidden;
+    overflow: visible;
 }
 
 .mi-historia-contenedor{
@@ -306,7 +306,7 @@ main{
     right: 0;
     bottom: 0;
     width: auto;
-    height: 100%;
+    height: calc(100% + 360px);
     object-fit: contain;
     object-position: bottom;
     z-index: 1;
@@ -600,7 +600,12 @@ main{
     }
 
     .sobre-mi-imagen{
-        display: none;
+        position: relative;
+        right: auto;
+        bottom: auto;
+        height: 300px;
+        width: auto;
+        margin: 0 auto;
     }
 
     .mi-historia-contenedor{
@@ -608,13 +613,7 @@ main{
     }
 
     .mi-historia-imagen{
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        width: 200px;
-        height: auto;
-        object-fit: contain;
-        margin-top: 0;
+        display: none;
     }
 
     .como-trabajo{
