@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="titulo descripcion">
+  <title id="titulo">Portafolio de Kenneth Carter</title>
+  <desc id="descripcion">Desarrollador de software en formación</desc>
+  <defs>
+    <pattern id="puntos" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.2" fill="#151515" opacity=".12"/>
+    </pattern>
+    <linearGradient id="azul" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#2857d9"/>
+      <stop offset="1" stop-color="#1f45ad"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#f4f3ef"/>
+  <rect width="1200" height="630" fill="url(#puntos)"/>
+  <circle cx="1045" cy="110" r="265" fill="none" stroke="#2857d9" stroke-opacity=".1" stroke-width="70"/>
+  <rect x="70" y="62" width="58" height="58" rx="29" fill="#151515"/>
+  <text x="99" y="99" fill="#fff" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="800" text-anchor="middle">KC</text>
+  <text x="70" y="208" fill="#2857d9" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="800" letter-spacing="3">PORTAFOLIO</text>
+  <text x="70" y="300" fill="#151515" font-family="Inter,Arial,sans-serif" font-size="76" font-weight="800" letter-spacing="-4">Kenneth Carter</text>
+  <text x="70" y="376" fill="#151515" font-family="Inter,Arial,sans-serif" font-size="54" font-weight="700" letter-spacing="-3">Desarrollo de software</text>
+  <text x="70" y="433" fill="#555" font-family="Inter,Arial,sans-serif" font-size="26">Aplicaciones web, móviles y soluciones con bases de datos.</text>
+  <rect x="70" y="500" width="300" height="58" rx="14" fill="url(#azul)"/>
+  <text x="220" y="537" fill="#fff" font-family="Inter,Arial,sans-serif" font-size="20" font-weight="700" text-anchor="middle">kennethcarter1.github.io</text>
+  <path d="M1010 239v210h54V369l80 80h69l-99-104 94-106h-68l-76 87v-87h-54Z" fill="#151515" opacity=".95"/>
+  <circle cx="1174" cy="449" r="39" fill="#2857d9"/>
+</svg>

@@ -1,188 +1,375 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio de Kenneth Carter, estudiante de Desarrollo y Gestión de Software enfocado en aplicaciones web, móviles y soluciones con bases de datos.">
+    <meta name="author" content="Kenneth Carter">
+    <meta name="theme-color" content="#111111">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_PA">
+    <meta property="og:title" content="Kenneth Carter | Desarrollador de software en formación">
+    <meta property="og:description" content="Proyectos web, móviles y de escritorio construidos con Kotlin, PHP, C#, JavaScript y bases de datos.">
+    <meta property="og:url" content="https://kennethcarter1.github.io/Portafolio/">
+    <meta property="og:image" content="https://kennethcarter1.github.io/Portafolio/assets/images/portada-portafolio.svg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Portafolio de Kenneth Carter, desarrollador de software en formación">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Kenneth Carter | Desarrollador de software en formación">
+    <meta name="twitter:description" content="Proyectos web, móviles y de escritorio construidos durante mi formación.">
+    <meta name="twitter:image" content="https://kennethcarter1.github.io/Portafolio/assets/images/portada-portafolio.svg">
+
+    <link rel="canonical" href="https://kennethcarter1.github.io/Portafolio/">
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.3.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Portafolio Personal | Kenneth Carter</title>
+    <title>Kenneth Carter | Desarrollador de software</title>
 </head>
 <body>
-    <div class="fondo" aria-hidden="true"></div>
-    <nav class="nav-superior">
-        <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#sobre-mi">Sobre mí</a></li>
-            <li><a href="#proyectos">Proyectos</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
-    </nav>
-    
+    <a class="enlace-saltar" href="#contenido-principal">Saltar al contenido</a>
+    <div class="fondo-punteado" aria-hidden="true"></div>
 
-    <main>
+    <header class="cabecera" id="cabecera">
+        <nav class="navegacion contenedor" aria-label="Navegación principal">
+            <a class="marca" href="#inicio" aria-label="Ir al inicio">
+                <img class="marca-foto" src="assets/images/fondo.webp" alt="" width="1200" height="960">
+                <span class="marca-texto">Kenneth Carter</span>
+            </a>
 
-        <section class="Inicio-principal" id="inicio">
-            <img src="https://avatars.githubusercontent.com/u/227913032?v=4" alt="Imagen de portada">
-            <div class="informacion-principal">
-                <p>Hola, Soy</p>
-                <h1>Kenneth Carter</h1>
-                <p class="descripcion">Desarrollador Web en formación</p>
-                <p class="texto-presentacion">Estoy aprendiendo desarrollo web y disfruto convertir ideas en páginas atractivas, funcionales y fáciles de usar.</p>
-                <div class="botones-navegacion">
-                    <a href="#proyectos" class="boton boton-proyectos">Ver Proyectos</a>
-                    <a href="assets/documents/HV.pdf" download class="boton boton-descarga">Descargar CV</a>
-                </div>
-                <div class="redes-sociales">
-                    <a href="https://github.com/KennethCarter1" target="_blank" rel="noopener noreferrer">
-                        <i class="fa-brands fa-github"></i> GitHub
-                    </a>
-                    <a href="https://www.linkedin.com/in/kenneth-carter-214a4a28b/" target="_blank" rel="noopener noreferrer">
-                        <i class="fa-brands fa-linkedin"></i> LinkedIn
-                    </a>
-                    <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=kenneth.jared1004%40gmail.com&amp;su=Contacto%20desde%20tu%20portafolio" target="_blank" rel="noopener noreferrer" aria-label="Enviar correo a Kenneth Carter">
-                        <i class="fa-solid fa-envelope"></i> Correo
-                    </a>
-                </div>
-            </div>
-        </section>
+            <button class="boton-menu" type="button" aria-expanded="false" aria-controls="lista-navegacion" aria-label="Abrir menú de navegación">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
 
-        <section class="sobre-mi" id="sobre-mi">
+            <ul class="lista-navegacion" id="lista-navegacion">
+                <li><a class="enlace-navegacion activo" href="#inicio">Inicio</a></li>
+                <li><a class="enlace-navegacion" href="#sobre-mi">Sobre mí</a></li>
+                <li><a class="enlace-navegacion" href="#formacion">Formación</a></li>
+                <li><a class="enlace-navegacion" href="#proyectos">Proyectos</a></li>
+                <li><a class="enlace-navegacion enlace-contacto" href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
-            <div class="sobre-mi-hero">
-                <div class="sobre-mi-texto">
-
-                    <h2>Conóceme un poco más.</h2>
-                    <span class="linea-titulo"></span>
-
-                    <p class="sobre-mi-profesion">
-                        Kenneth Carter · Desarrollador Web en formación
+    <main id="contenido-principal">
+        <section class="portada seccion" id="inicio" aria-labelledby="titulo-principal">
+            <div class="contenedor portada-contenido">
+                <div class="portada-texto" data-aparecer>
+                    <p class="saludo">Hola, soy Kenneth</p>
+                    <h1 id="titulo-principal">Construyo soluciones digitales <span>claras y funcionales.</span></h1>
+                    <p class="portada-descripcion">
+                        Estudiante de Desarrollo y Gestión de Software con experiencia académica en aplicaciones web, móviles y de escritorio. Convierto problemas en productos útiles, paso a paso.
                     </p>
 
-                    <div class="estado-aprendizaje">
-                        <span class="cuadro-azul"></span>
-                            <p>Aprendiendo y construyendo proyectos</p>
-                        
+                    <div class="grupo-botones">
+                        <a class="boton boton-primario" href="#proyectos">
+                            Ver proyectos
+                            <i class="fa-solid fa-arrow-down" aria-hidden="true"></i>
+                        </a>
+                        <a class="boton boton-secundario" href="assets/documents/HV.pdf" download>
+                            Descargar CV
+                            <i class="fa-solid fa-download" aria-hidden="true"></i>
+                        </a>
+                    </div>
+
+                    <div class="redes-portada" aria-label="Redes y contacto">
+                        <a href="https://github.com/KennethCarter1" target="_blank" rel="noopener noreferrer" aria-label="Perfil de Kenneth en GitHub">
+                            <i class="fa-brands fa-github" aria-hidden="true"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/kenneth-carter-214a4a28b/" target="_blank" rel="noopener noreferrer" aria-label="Perfil de Kenneth en LinkedIn">
+                            <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="mailto:kenneth.jared1004@gmail.com" aria-label="Enviar correo a Kenneth">
+                            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                            <span>Correo</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="portada-visual" data-aparecer>
+                    <div class="marco-retrato">
+                        <div class="circulo-retrato" aria-hidden="true"></div>
+                        <img src="assets/images/fondo.webp" alt="Retrato de Kenneth Carter" width="1200" height="960">
+                        <div class="tarjeta-flotante tarjeta-codigo" aria-hidden="true">
+                            <i class="fa-solid fa-code"></i>
+                            <span>Aprender</span>
+                        </div>
+                        <div class="tarjeta-flotante tarjeta-solucion" aria-hidden="true">
+                            <i class="fa-solid fa-check"></i>
+                            <span>Construir</span>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <div class="mi-historia">
-                <div class="mi-historia-contenedor">
-                    <div class="mi-historia-titulo">
-                        <h3>Mi historia</h3>
-                    </div>
-
-                    <div class="mi-historia-contenido">
-
-                        <p>
-                            Durante mi formación como desarrollador web he aprendido
-                            a convertir ideas en páginas atractivas y funcionales.
-                            Actualmente continúo fortaleciendo mis conocimientos
-                            mientras construyo nuevos proyectos.
-                        </p>
-
-                        <p class="frase-historia">
-                            "Aprender haciendo es parte de mi proceso."
-                        </p>
-
-                    </div>
-                </div>
-                <img
-                    src="assets/images/fondo.webp"
-                    alt="Kenneth Carter"
-                    class="mi-historia-imagen"
-                >
-            </div>
-
-             <div class="como-trabajo">
-                    <h3>COMO TRABAJO</h3>
-                    <div class="pasos-trabajo">
-                        <div class="paso">
-                            <span class="paso-numero">01</span>
-                            <p>Analizo el problema</p>
-                        </div>
-                        <div class="paso">
-                            <span class="paso-numero">02</span>
-                            <p>Organizo la solución</p>
-                        </div>
-                        <div class="paso">
-                            <span class="paso-numero">03</span>
-                            <p>Construyo paso a paso</p>
-                        </div>
-                        <div class="paso">
-                            <span class="paso-numero">04</span>
-                            <p>Pruebo y mejoro</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="stack">
-                    <p>stack tecnologicos</p>
-                </div>
-
-                <div class="tecnologias-loop">
-                    <div class="loop-pista">
-                        <div class="loop-item"><i class="devicon-html5-plain-wordmark"></i><span>HTML</span></div>
-                        <div class="loop-item"><i class="devicon-css3-plain-wordmark"></i><span>CSS</span></div>
-                        <div class="loop-item"><i class="devicon-php-plain"></i><span>PHP</span></div>
-                        <div class="loop-item"><i class="devicon-javascript-plain"></i><span>JavaScript</span></div>
-                        <div class="loop-item"><i class="devicon-java-plain-wordmark"></i><span>Java</span></div>
-                        <div class="loop-item"><i class="devicon-csharp-plain-wordmark"></i><span>C#</span></div>
-                        <div class="loop-item"><i class="devicon-python-plain-wordmark"></i><span>Python</span></div>
-                        <div class="loop-item"><i class="devicon-kotlin-plain-wordmark"></i><span>Kotlin</span></div>
-                        <div class="loop-item"><i class="devicon-microsoftsqlserver-plain-wordmark"></i><span>SQL Server</span></div>
-                        <div class="loop-item"><i class="devicon-mariadb-plain-wordmark"></i><span>MariaDB</span></div>
-                        <div class="loop-item"><i class="devicon-sqlite-plain-wordmark"></i><span>SQLite</span></div>
-
-                        <div class="loop-item"><i class="devicon-html5-plain-wordmark"></i><span>HTML</span></div>
-                        <div class="loop-item"><i class="devicon-css3-plain-wordmark"></i><span>CSS</span></div>
-                        <div class="loop-item"><i class="devicon-php-plain"></i><span>PHP</span></div>
-                        <div class="loop-item"><i class="devicon-javascript-plain"></i><span>JavaScript</span></div>
-                        <div class="loop-item"><i class="devicon-java-plain-wordmark"></i><span>Java</span></div>
-                        <div class="loop-item"><i class="devicon-csharp-plain-wordmark"></i><span>C#</span></div>
-                        <div class="loop-item"><i class="devicon-python-plain-wordmark"></i><span>Python</span></div>
-                        <div class="loop-item"><i class="devicon-kotlin-plain-wordmark"></i><span>Kotlin</span></div>
-                        <div class="loop-item"><i class="devicon-microsoftsqlserver-plain-wordmark"></i><span>SQL Server</span></div>
-                        <div class="loop-item"><i class="devicon-mariadb-plain-wordmark"></i><span>MariaDB</span></div>
-                        <div class="loop-item"><i class="devicon-sqlite-plain-wordmark"></i><span>SQLite</span></div>
-                    </div>
-                </div>
-
-                <div class="habilidades">
-                    <div class="habilidades-titulo">
-                        <h3>Habilidades</h3>
-                        <span class="linea-habilidades"></span>
-                    </div>
-                    <div class="habilidades-contenido">
-                        <div class="habilidad-columna">
-                            <h4>Técnicas</h4>
-                            <div class="linea-separadora"></div>
-                            <ul>
-                                <li>Desarrollo web</li>
-                                <li>Programación orientado a objetos</li>
-                                <li>Manejo de base de datos</li>
-                            </ul>
-                        </div>
-                        <div class="habilidad-columna">
-                            <h4>Personales</h4>
-                            <div class="linea-separadora"></div>
-                            <ul>
-                                <li>Resolución de problemas</li>
-                                <li>Pensamiento lógico</li>
-                                <li>Capacidad de análisis</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-
-
         </section>
 
+        <section class="sobre-mi seccion seccion-oscura" id="sobre-mi" aria-labelledby="titulo-sobre-mi">
+            <div class="contenedor">
+                <div class="encabezado-seccion encabezado-claro" data-aparecer>
+                    <p class="sobrelinea">Sobre mí</p>
+                    <h2 id="titulo-sobre-mi">Aprender haciendo es parte de mi proceso.</h2>
+                </div>
 
+                <div class="sobre-mi-cuadricula">
+                    <div class="historia" data-aparecer>
+                        <p class="texto-destacado">
+                            Me interesa crear software que se entienda, funcione bien y resuelva una necesidad real.
+                        </p>
+                        <p>
+                            Durante mi formación he trabajado en proyectos web, aplicaciones Android, soluciones con API y sistemas conectados a bases de datos. Cada proyecto me ha enseñado a analizar mejor, organizar el código y probar antes de entregar.
+                        </p>
+                        <p>
+                            También cuento con experiencia complementaria en telecomunicaciones y mantenimiento técnico, una base que fortaleció mi atención al detalle y mi forma práctica de resolver problemas.
+                        </p>
+                    </div>
 
+                    <div class="metodo-trabajo" data-aparecer>
+                        <h3>Cómo trabajo</h3>
+                        <ol class="lista-metodo">
+                            <li><span>01</span><p><strong>Analizo</strong> el problema y sus necesidades.</p></li>
+                            <li><span>02</span><p><strong>Organizo</strong> una solución clara y alcanzable.</p></li>
+                            <li><span>03</span><p><strong>Construyo</strong> de forma ordenada y gradual.</p></li>
+                            <li><span>04</span><p><strong>Pruebo</strong>, corrijo y sigo mejorando.</p></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="formacion seccion" id="formacion" aria-labelledby="titulo-formacion">
+            <div class="contenedor">
+                <div class="encabezado-seccion" data-aparecer>
+                    <p class="sobrelinea">Formación y herramientas</p>
+                    <h2 id="titulo-formacion">Una base técnica en crecimiento constante.</h2>
+                    <p>Formación universitaria acompañada de proyectos reales en diferentes plataformas.</p>
+                </div>
+
+                <div class="formacion-cuadricula">
+                    <article class="tarjeta-formacion" data-aparecer>
+                        <div class="icono-formacion" aria-hidden="true">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <div>
+                            <p class="estado-formacion">En curso</p>
+                            <h3>Licenciatura en Desarrollo y Gestión de Software</h3>
+                            <p>Universidad Tecnológica de Panamá</p>
+                            <ul class="lista-simple">
+                                <li>Desarrollo web y móvil</li>
+                                <li>Diseño y gestión de bases de datos</li>
+                                <li>Programación orientada a objetos</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <div class="panel-habilidades" data-aparecer>
+                        <div class="grupo-habilidad">
+                            <h3>Frontend</h3>
+                            <div class="lista-etiquetas">
+                                <span><i class="devicon-html5-plain" aria-hidden="true"></i> HTML</span>
+                                <span><i class="devicon-css3-plain" aria-hidden="true"></i> CSS</span>
+                                <span><i class="devicon-javascript-plain" aria-hidden="true"></i> JavaScript</span>
+                            </div>
+                        </div>
+                        <div class="grupo-habilidad">
+                            <h3>Backend y móvil</h3>
+                            <div class="lista-etiquetas">
+                                <span><i class="devicon-php-plain" aria-hidden="true"></i> PHP</span>
+                                <span><i class="devicon-csharp-plain" aria-hidden="true"></i> C#</span>
+                                <span><i class="devicon-kotlin-plain" aria-hidden="true"></i> Kotlin</span>
+                                <span><i class="devicon-java-plain" aria-hidden="true"></i> Java</span>
+                            </div>
+                        </div>
+                        <div class="grupo-habilidad">
+                            <h3>Datos y herramientas</h3>
+                            <div class="lista-etiquetas">
+                                <span><i class="devicon-mysql-original" aria-hidden="true"></i> MySQL</span>
+                                <span><i class="devicon-sqlite-plain" aria-hidden="true"></i> SQLite</span>
+                                <span><i class="devicon-microsoftsqlserver-plain" aria-hidden="true"></i> SQL Server</span>
+                                <span><i class="devicon-git-plain" aria-hidden="true"></i> Git</span>
+                                <span><i class="devicon-docker-plain" aria-hidden="true"></i> Docker</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="proyectos seccion" id="proyectos" aria-labelledby="titulo-proyectos">
+            <div class="contenedor">
+                <div class="encabezado-seccion" data-aparecer>
+                    <p class="sobrelinea">Trabajo seleccionado</p>
+                    <h2 id="titulo-proyectos">Proyectos que convierten aprendizaje en soluciones.</h2>
+                    <p>Una selección de aplicaciones web, móviles y de escritorio desarrolladas durante mi formación.</p>
+                </div>
+
+                <div class="lista-proyectos-destacados">
+                    <article class="proyecto-destacado proyecto-elyra" data-aparecer>
+                        <div class="proyecto-imagen imagen-elyra">
+                            <img class="imagen-fondo-proyecto" src="assets/images/proyectos/elyra-fondo.webp" alt="Interfaz visual del proyecto Elyra" width="1200" height="800" loading="lazy">
+                            <img class="logo-proyecto logo-elyra" src="assets/images/proyectos/elyra-logo.webp" alt="Logotipo de Elyra" width="420" height="420" loading="lazy">
+                        </div>
+                        <div class="proyecto-informacion">
+                            <div class="proyecto-cabecera">
+                                <p class="tipo-proyecto">Plataforma web · Proyecto colaborativo</p>
+                            </div>
+                            <h3>Elyra</h3>
+                            <p>Plataforma para descubrir y gestionar anime, películas y series con autenticación, recomendaciones, favoritos, comentarios, administración y estadísticas.</p>
+                            <div class="tecnologias-proyecto" aria-label="Tecnologías de Elyra">
+                                <span>PHP</span><span>JavaScript</span><span>MySQL</span><span>SOAP</span>
+                            </div>
+                            <a class="enlace-proyecto" href="https://github.com/KennethCarter1/Elyra-Web-Anime-Peliculas-Series" target="_blank" rel="noopener noreferrer">
+                                Ver repositorio <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="proyecto-destacado proyecto-invertido" data-aparecer>
+                        <div class="proyecto-imagen imagen-alethea">
+                            <div class="decoracion-movil" aria-hidden="true"></div>
+                            <img class="logo-proyecto logo-alethea" src="assets/images/proyectos/alethea.webp" alt="Logotipo de la aplicación Alethea" width="200" height="200" loading="lazy">
+                            <p aria-hidden="true">Biblioteca móvil</p>
+                        </div>
+                        <div class="proyecto-informacion">
+                            <div class="proyecto-cabecera">
+                                <p class="tipo-proyecto">Aplicación Android · Proyecto colaborativo</p>
+                            </div>
+                            <h3>Alethea</h3>
+                            <p>Aplicación móvil para administrar una biblioteca: catálogo, préstamos, favoritos y perfiles de usuario con almacenamiento local.</p>
+                            <p class="aporte-proyecto"><strong>Mi participación:</strong> perfil, préstamos, catálogo, favoritos, detalle de libros y colaboración en la base de datos.</p>
+                            <div class="tecnologias-proyecto" aria-label="Tecnologías de Alethea">
+                                <span>Kotlin</span><span>XML</span><span>SQLite</span><span>Android</span>
+                            </div>
+                            <a class="enlace-proyecto" href="https://github.com/KennethCarter1/Alethea" target="_blank" rel="noopener noreferrer">
+                                Ver repositorio <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="proyecto-destacado" data-aparecer>
+                        <div class="proyecto-imagen imagen-recetas">
+                            <img class="imagen-fondo-proyecto" src="assets/images/proyectos/recetas-fondo.webp" alt="Fotografía de una receta utilizada en la aplicación" width="800" height="533" loading="lazy">
+                            <img class="logo-proyecto logo-recetas" src="assets/images/proyectos/recetas-logo.webp" alt="Logotipo del sistema de recetas" width="578" height="350" loading="lazy">
+                        </div>
+                        <div class="proyecto-informacion">
+                            <div class="proyecto-cabecera">
+                                <p class="tipo-proyecto">Aplicación web · Proyecto académico</p>
+                            </div>
+                            <h3>Recetas de Cocina</h3>
+                            <p>Sistema para gestionar recetas y usuarios mediante una arquitectura separada. La interfaz MVC consume una Web API usando solicitudes HTTP y datos JSON.</p>
+                            <div class="tecnologias-proyecto" aria-label="Tecnologías de Recetas de Cocina">
+                                <span>C#</span><span>ASP.NET MVC</span><span>Web API</span><span>SQL Server</span>
+                            </div>
+                            <a class="enlace-proyecto" href="https://github.com/KennethCarter1/Proyecto-Final-Ds4" target="_blank" rel="noopener noreferrer">
+                                Ver repositorio <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="proyecto-destacado proyecto-invertido" data-aparecer>
+                        <div class="proyecto-imagen imagen-pokefinder">
+                            <img class="imagen-fondo-proyecto" src="assets/images/proyectos/pokefinder-app.webp" alt="Interfaz de búsqueda de Pokémon en PokéFinder" width="1672" height="941" loading="lazy">
+                        </div>
+                        <div class="proyecto-informacion">
+                            <div class="proyecto-cabecera">
+                                <p class="tipo-proyecto">Aplicación web · Proyecto colaborativo</p>
+                            </div>
+                            <h3>PokéFinder</h3>
+                            <p>Buscador y comparador de Pokémon conectado a PokeAPI, con caché local, historial de búsquedas, favoritos y una experiencia visual de estilo brutalista.</p>
+                            <div class="tecnologias-proyecto" aria-label="Tecnologías de PokéFinder">
+                                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>REST API</span>
+                            </div>
+                            <a class="enlace-proyecto" href="https://github.com/KennethCarter1/Proyecto-Semestral-Pok-Finder" target="_blank" rel="noopener noreferrer">
+                                Ver repositorio <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="otros-proyectos" data-aparecer>
+                    <div class="otros-proyectos-titulo">
+                        <p class="sobrelinea">Más experiencia práctica</p>
+                        <h3>Otros proyectos académicos</h3>
+                    </div>
+                    <div class="cuadricula-proyectos-secundarios">
+                        <article class="proyecto-secundario">
+                            <div class="icono-proyecto-secundario"><i class="fa-brands fa-android" aria-hidden="true"></i></div>
+                            <p class="tipo-proyecto">Aplicación móvil</p>
+                            <h4>Administrador de Órdenes</h4>
+                            <p>Gestión de clientes, productos y órdenes con cálculos automáticos y persistencia local.</p>
+                            <div class="tecnologias-proyecto"><span>Kotlin</span><span>SQLite</span></div>
+                            <a class="enlace-proyecto" href="https://github.com/KennethCarter1/Administrador-de-Ordenes" target="_blank" rel="noopener noreferrer">
+                                Ver repositorio <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                            </a>
+                        </article>
+                        <article class="proyecto-secundario">
+                            <div class="icono-proyecto-secundario"><i class="fa-solid fa-users" aria-hidden="true"></i></div>
+                            <p class="tipo-proyecto">Sistema web</p>
+                            <h4>Registro de Aspirantes</h4>
+                            <p>Registro, autenticación y seguimiento de solicitudes para un área de Recursos Humanos.</p>
+                            <div class="tecnologias-proyecto"><span>PHP</span><span>MySQL</span></div>
+                            <a class="enlace-proyecto" href="https://github.com/KennethCarter1/Parcial2-Aspirantes" target="_blank" rel="noopener noreferrer">
+                                Ver repositorio <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                            </a>
+                        </article>
+                        <article class="proyecto-secundario">
+                            <div class="icono-proyecto-secundario"><i class="fa-solid fa-chart-line" aria-hidden="true"></i></div>
+                            <p class="tipo-proyecto">Sistema web</p>
+                            <h4>Proyecto de Contabilidad</h4>
+                            <p>Aplicación organizada en modelos, vistas y controladores para procesos contables.</p>
+                            <div class="tecnologias-proyecto"><span>PHP</span><span>JavaScript</span></div>
+                            <a class="enlace-proyecto" href="https://github.com/KennethCarter1/Proyecto-Contabilidad" target="_blank" rel="noopener noreferrer">
+                                Ver repositorio <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                            </a>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contacto seccion seccion-oscura" id="contacto" aria-labelledby="titulo-contacto">
+            <div class="contenedor contacto-contenido" data-aparecer>
+                <div>
+                    <p class="sobrelinea">Contacto</p>
+                    <h2 id="titulo-contacto">¿Tienes una oportunidad o un proyecto en mente?</h2>
+                    <p>Estoy disponible para conversar, aprender y colaborar en soluciones que generen valor.</p>
+                </div>
+                <div class="contacto-acciones">
+                    <a class="boton boton-claro" href="mailto:kenneth.jared1004@gmail.com">
+                        Escríbeme por correo
+                        <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </a>
+                    <a class="correo-visible" href="mailto:kenneth.jared1004@gmail.com">kenneth.jared1004@gmail.com</a>
+                    <div class="contacto-redes">
+                        <a href="https://github.com/KennethCarter1" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Kenneth"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+                        <a href="https://www.linkedin.com/in/kenneth-carter-214a4a28b/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Kenneth"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <footer class="pie-pagina">
+        <div class="contenedor pie-contenido">
+            <p>© <span id="anio-actual"></span> Kenneth Carter.</p>
+            <a href="https://github.com/KennethCarter1/Portafolio" target="_blank" rel="noopener noreferrer">Código del portafolio</a>
+        </div>
+    </footer>
+
+    <button class="boton-subir" type="button" aria-label="Volver al inicio" title="Volver al inicio">
+        <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+    </button>
+
     <script src="js/main.js"></script>
 </body>
 </html>
