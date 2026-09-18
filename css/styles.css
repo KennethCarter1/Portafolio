@@ -1077,13 +1077,39 @@ a.enlace-proyecto:hover {
     background: var(--color-acento);
 }
 
-.correo-visible {
-    max-width: 100%;
+.lista-contacto-tecnologias {
+    margin: 1.25rem 0 1.5rem;
+    padding-left: 1.2rem;
+    color: #b8bbc1;
+    font-size: 0.92rem;
+}
+
+.lista-contacto-tecnologias li {
+    margin-top: 0.45rem;
+}
+
+.lista-contacto-tecnologias li::marker {
+    color: #8ca8f2;
+}
+
+.contacto-directo {
+    margin: 0;
+    color: #b8bbc1;
+    font-size: 0.92rem;
+}
+
+.contacto-directo a {
+    color: #8ca8f2;
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 0.25rem;
+    text-decoration-color: rgb(140 168 242 / 55%);
     overflow-wrap: anywhere;
-    color: #c6c8cd;
-    font-size: 0.82rem;
-    text-decoration-color: #666a72;
-    text-underline-offset: 0.3rem;
+}
+
+.contacto-directo a:hover {
+    color: #fff;
+    text-decoration-color: #fff;
 }
 
 .contacto-redes {
