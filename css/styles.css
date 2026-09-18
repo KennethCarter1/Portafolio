@@ -1045,8 +1045,8 @@ a.enlace-proyecto:hover {
 .contacto-contenido {
     position: relative;
     display: grid;
-    grid-template-columns: minmax(0, 1.25fr) minmax(17rem, 0.55fr);
-    align-items: end;
+    grid-template-columns: minmax(0, 1.1fr) minmax(17rem, 0.9fr);
+    align-items: start;
     gap: clamp(3rem, 9vw, 8rem);
 }
 
@@ -1113,6 +1113,7 @@ a.enlace-proyecto:hover {
 }
 
 .contacto-redes {
+    margin-top: 1.5rem;
     display: flex;
     gap: 0.65rem;
 }
